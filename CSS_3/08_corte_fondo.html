@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>origen de fondo</title>
+	<style>
+		section{
+			background: #ccc url(imagenes/origen.jpg) no-repeat;
+			border: 40px solid transparent;
+			padding: 40px;
+			margin: 10px;
+			height: 220px;
+			width: 280px;
+		}
+		.cor1{background-clip: border-box;}
+		.cor2{background-clip: padding-box;}
+		.cor3{background-clip: content-box;}
+	</style>
+</head>
+<body>
+	<h1>origen de fondo</h1>
+	<hr>
+	<section class="cor1">
+		<h3>background-origin: border-box;</h3>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</section>
+
+	<section class="cor2">
+		<h3>background-origin: padding-box;</h3>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</section>
+
+	<section class="cor3">
+		<h3>background-origin: content-box;</h3>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</section>
+</body>
+</html>

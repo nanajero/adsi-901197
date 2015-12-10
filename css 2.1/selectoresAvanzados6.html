@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>selectores avanzados</title>
+	<style>
+	/* selector de hijos */
+	p> span {
+		border: 2px solid red;
+	}
+	/* selectores adyacentes */
+	h1 + h2 {
+		border:2px dotted blue;
+	}
+	/* selector de atributo */
+	a[class]{
+		border:2px dashed green;
+	}
+	</style>
+</head>
+<body>
+	<h1> selectores avanzados css</h1>
+	<hr>
+	<fieldset>
+		<legend><h4>selector hijos (p>span)></h4></legend>
+		<p>
+		<span>soy un hijo</span>
+		<p><a href=""><span>enlace</span></a></p>
+		</p>
+	</fieldset>
+	<!--/////////////////////////////// -->
+	<fieldset>
+		<legend><h4>selector adyacente (h1 + h2)</h4></legend>
+		<h1> lorem ipsum</h1>
+		<h1> soy el adyacente</h1>
+		<h1> soy otro h2</h1>
+	</fieldset>
+
+
+	<legend><h4>selector atributo(a[class])</h4></legend>
+	<a href="" class="enlace">enlace con atributo class</a>
+	<a href="">enlace sin atributo class </a>
+
+
+</body>
+</html>

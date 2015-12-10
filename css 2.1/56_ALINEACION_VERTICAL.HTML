@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>texto(alineacion vertical)</title>
+	<style>
+     section{
+     	display: table;
+     	border: 2px solid #ccc;
+     	padding: 10px;
+     	margin: 20px auto;
+     	width: 400px;
+     }
+
+     .vt{vertical-align: top;}
+     .vm{display: table-cell; vertical-align: middle;}
+     .vb{vertical-align: baseline;}
+	</style>
+</head>
+<body>
+	<h1>texto(alineacion vertical)</h1>
+	<hr>
+	<section>
+		<img src="imagenes/MB__help.png" >
+		<span class="vt">ayuda</span>
+	</section>
+
+	 <section>
+		<img src="imagenes/MB__help.png" >
+		<span class="vm">ayuda</span>
+	</section>
+	
+	<section>
+		<img src="imagenes/MB__help.png" >
+		<span class="vb">ayuda</span>
+	</section>
+	
+</body>
+</html>
