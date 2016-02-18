@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>reto(objetos)</title>
+	<style >
+  body {
+    background-color: #9a1214;
+    font: 16px tahoma;
+  } 
+
+  section.contenedor{
+    border:10px solid #6f0c0d;
+    background-color: #fff;
+    margin:20px auto;
+    padding:20px;
+    width:1160 ;
+  }
+
+  section.contenedor h1{
+    color: #9a1214;
+    text-align: center;
+  }
+
+  section.contenedor hr{
+   border-color: #9a1214;
+    
+  }
+
+  nav.opciones{
+    margin: 20px auto;
+    width: 200px;
+  }
+
+  button{
+    border:none;
+    background-color: #9a1214;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-bottom: 4px;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+
+  }
+
+  button:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+  }
+   img {
+    
+   
+    width: 300px;
+   }
+   .iniciar{
+    -webkit-animation:0.2s animIniciar infinite;
+   }
+    @-webkit-keyframes animIniciar {
+      0%, 100% {-webkit-transform: translateY(0px);}
+      50%      {-webkit-transform: translateY(5px);}
+    }
+	</style>
+   
+   
+</head>
+<body> 
+<section class="contenedor">
+
+	
+
+<h1>reto(objetos)</h1>
+<hr>
+ <img id="vhcl"  src="imagenes/carro.jpg" >
+ <br>
+ <nav class="opciones">
+ <button id="btn-iniciar">Iniciar</button>
+ <button id="btn-apagar">Apagar</button>
+ <button id="btn-avanzar">Avanzar</button>
+ <button id="btn-detener">Detener</button>
+ <button id="btn-info">Mostrar datos</button>
+ </nav>
+</section>
+	<script>
+      var vhcl = document.getElementById('vhcl');
+     var vehiculo ={
+     	marca: 'fiat',
+     	referencia: '500',
+     	modelo: 2015,
+     	color: 'rojo',
+     	cilindraje: 1400,
+
+      iniciar: function() {
+         vhcl.classList.add ('iniciar');
+      },
+
+      avanzar: function() {
+         alert ("Avanzando...")
+     },
+      detener: function() {
+         alert ("Detenido...")
+     },
+
+      apagar: function() {
+         vhcl.classList.remove('iniciar');
+      },
+      info: function() {
+         alert ("marca:"+this.marca+
+          "\nreferencia:"+this.referencia+
+          "\nmodelo:"+this.modelo+
+          "\ncolor:"+this.color+
+          "\ncilindraje:"+this.cilindraje);
+     }
+   };
+
+   var btnIniciar = document.getElementById('btn-iniciar');
+   var btnApagar = document.getElementById('btn-apagar');
+   var btnAvanzar = document.getElementById('btn-avanzar');
+   var btnDetener = document.getElementById('btn-detener');
+   var btnInfo = document.getElementById('btn-info');
+
+    btnIniciar.onclick =function (){
+      vehiculo.iniciar();
+    }
+
+      btnApagar.onclick =function (){
+      vehiculo.apagar();
+    }
+
+
+    btnAvanzar.onclick =function (){
+      vehiculo.avanzar();
+    }
+
+
+    btnDetener.onclick =function (){
+      vehiculo.detener();
+    }
+
+    btnInfo.onclick =function (){
+      vehiculo.info();
+    }
+	</script>
+</body>
+</html>
