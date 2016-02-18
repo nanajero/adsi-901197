@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+main {
+	background-color: #57A2E7;
+	padding: 100px 0px;
+	width: 600px;
+	margin: 0px auto;
+}
+
+section.ball{
+	border: 10px solid #0CD9AB;
+	border-radius: 50%;
+	background-color: #7237EB;
+	position: relative;
+	margin: 0px auto;
+	height: 50px;
+	width: 50px;
+	-webkit-transition: background-color,
+	                    border-width 1s 0s,
+	                    transform 1s 1s,
+	                    left 1s 2s,
+	                    border-color 1s 3s;
+}
+main:hover section {
+	background-color: #EB348E;
+	border-width: 50px;
+	left: 200px;
+	-webkit-transform: rotateY(-160deg);
+}
+</style>
+</head>
+<body>
+<main>
+	 <section class="ball"></section>
+</main>
+</body>
+</html>

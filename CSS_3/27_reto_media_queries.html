@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <title>Media Queries (Imagenes)</title>
+       <style>
+          body { background-color: #fff;}
+       section.page {
+              background: url(img/logo1.jpg) no-repeat center center;
+              height: 300px;
+              margin: 20px auto;
+              width: 800px;
+              -webkit-transition: all 0.5s ease-in-out;
+       }
+       section.dibujos { 
+              background-color: #696969;
+              height: 500px;
+              margin: 17px auto;
+              margin-left: 30px;
+              width: 400px;
+              float: left;
+
+              border-radius: 10%;
+              box-shadow: 20px 20px 40px #000;
+       }
+       section.imagen {
+              background-color: #FFF;
+              height: 230px;
+              margin: 32px auto;
+              width: 230px;
+              border-radius: 50%;
+              position: center;
+       }
+       .scooby {
+              background: url(img/imagen1.jpg) no-repeat center center;
+              background-size: 100% 100%;
+       }
+       .daphne {
+              background: url(img/imagen2.jpg) no-repeat center center;
+              background-size: 100% 100%;
+       }
+       .vilma {
+              background: url(img/imagen3.gif) no-repeat center center;
+              background-size: 100% 100%;
+       }
+        .fred {
+              background: url(img/imagen4.jpg) no-repeat center center;
+              background-size: 100% 100%;
+       }
+        .shaggy {
+              background: url(img/imagen5.jpg) no-repeat center center;
+              background-size: 100% 100%;
+       }
+        .scoobydoo {
+              background: url(img/imagen6.jpg) no-repeat center center;
+              background-size: 100% 100%;
+       }
+       h1 {
+              text-align: center;
+              font-family: snap ITC;
+       }
+       h3 {
+              text-align: center;
+              font-family: Algerian;
+       }
+
+       @media (max-width: 1000px) {
+              section.page {
+                     background: url(img/logo2.jpg) no-repeat center center;
+                     height: 300px;
+                     margin: 20px auto;
+                     width: 348px;
+              }
+              section.dibujos {
+                     width: 350px;
+              }
+       }
+
+       @media (max-width: 600px) {
+              section.page {
+                     background: url(img/logo3.gif) no-repeat center center;
+                     height: 156px;
+                     margin: 20px auto;
+                     width: 162px;
+              }
+              section.dibujos {
+                     width: 300;
+              }
+       }
+       </style>
+</head>
+<body>
+             <section class="page"></section>
+
+             <section class="dibujos">
+                    <section class="imagen scooby"></section>
+                    <h1>Scooby</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+             <section class="dibujos">
+                    <section class="imagen daphne "></section>
+                    <h1>Daphne</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+             <section class="dibujos">
+                    <section class="imagen vilma"></section>
+                    <h1>Vilma</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+             <section class="dibujos">
+                    <section class="imagen fred"></section>
+                    <h1>Fred</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+             <section class="dibujos">
+                    <section class="imagen shaggy"></section>
+                    <h1>Shaggy</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+             <section class="dibujos">
+                    <section class="imagen scoobydoo"></section>
+                    <h1>Scoobydoo</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore error velit consectetur enim quibusdam ab vitae quo autem voluptatibus rem laborum.</h3>
+             </section>
+</body>
+</html>

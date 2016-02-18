@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries</title>
+	<style>
+      body {
+      	font: 16px tahoma;
+      }
+      section.page {
+      	border: 10px solid #80A553;
+      	padding: 20px;
+      }
+      section.page p {
+      	text-align: justify;
+      	line-height: 22px;}
+        .res { display: none; }
+
+      @media (max-width: 1280px) {
+      	section.page { background-color: #C0F87D;}
+      	       .res { display: none;}
+      	       .res1280 { display: inline;}
+      }
+      @media (max-width: 1024px) {
+      	section.page { background-color: #F8F393;}
+      	       .res { display: none;}
+      	       .res1024 { display: inline;}
+      }
+      @media (max-width: 800px) {
+      	section.page { background-color: #ACABF8;}
+      	       .res { display: none;}
+      	       .res800 { display: inline;}
+      }
+      @media (max-width: 600px) {
+      	section.page { background-color: #F8A7D3;}
+      	       .res { display: none;}
+      	       .res600 { display: inline;}
+      }
+	</style>
+</head>
+<body>
+	<section class="page">
+		<h1>
+			Media Queries | Resolucion Detectada:
+			<span class="res res1280"> 1280px</span>
+			<span class="res res1024"> 1024px</span>
+			<span class="res res800"> 800px</span>
+			<span class="res res600"> 600px</span>
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque rerum ut aperiam laboriosam, explicabo officiis in, voluptatum animi perspiciatis illo quisquam. Et architecto, repellat voluptatum officiis dolorum alias dicta, perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit explicabo, animi voluptatibus odio officia autem, consequuntur quos. Quasi assumenda consequuntur harum, tenetur veritatis. Repellendus saepe sint nihil optio quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maxime, neque quae magni ea. Voluptatem, velit, suscipit? Alias iste incidunt, ipsum eos consectetur vitae placeat quod aut vero veritatis cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi temporibus sit tenetur quis earum voluptas consequatur rerum, corporis nobis illum sunt, provident porro repudiandae autem, doloribus error, vel et aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita atque cupiditate ipsa hic quaerat, doloremque voluptatum ea adipisci repellat soluta mollitia consectetur, amet maiores minima facere eius quod. Voluptatum, error.
+		</p>
+	</section>
+</body>
+</html>
