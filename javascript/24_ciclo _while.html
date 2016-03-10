@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ciclo (while)</title>
+	<style>
+	section.colores {
+		margin: 20px auto;
+		width: 1024px;
+	}
+	article{
+		border: 2px solid #ccc;
+		height: 50px;
+		margin: 1px 0px;
+	}
+	</style>
+</head>
+<body>
+	<h1>ciclo (while)</h1>
+	<hr>
+	<script>
+     var colores   = document.getElementById('colores');
+     var contenido = '';
+     var i         = 0;
+     while (i < 10) {
+     	contenido += "<article></article>";
+     	i++;
+     }
+       colores.innerHTML = contenido;
+	</script>
+</body>
+</html>

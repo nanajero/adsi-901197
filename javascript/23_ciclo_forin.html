@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ciclo (Forin)</title>
+</head>
+<body>
+	<h1>ciclo (forin)</h1>
+	<hr>
+	<ul id ="datos"></ul>
+
+	<script>
+	var  datos = document.getElementById('datos');
+     var persona ={
+     	'nombre':'andres',
+     	'apellido':'martinez',
+     	'telefono':'30000000',
+     	'direccion':'arenillo casa 2'
+     };
+     for (var dato in persona) {
+     	datos.innerHTML += "<li>"+persona[dato]+"</li>";
+     }
+	</script>
+</body>
+</html>
