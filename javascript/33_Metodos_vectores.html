@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodos vectores(arreglos)</title>
+</head>
+<body>
+	<h1><font color="Brown">Metodos vectores(arreglos)</font></h1>
+	<hr>
+	<ul id="salida"></ul>
+
+	<script>
+	     var salida = document.getElementById('salida');
+	     var conten ="";
+         var bicis = [
+         'trek',
+         'specialized',
+         'yt',
+         'santacruz',
+         'giant',
+         'cannondale',
+         'scott'
+         ];
+        
+        // valueOf(listar todo el contenido del arreglo)
+
+        conten += "<li> Arreglo: " +bicis.valueOf()+"</li>";
+          
+         //toString() (Convertir el arreglo en una cadena)
+         conten += "<li> Cadena: " +bicis.toString()+"</li>";
+          
+          //join (unir)
+         conten += "<li> Unir: " +bicis.join('***')+"</li>";
+
+          //Sort(Ordenar el arreglo)
+         conten += "<li>  Ordenado:" +bicis.sort()+"</li>";
+
+         //reverse(Revertir el arreglo)
+         conten += "<li>  Revertido:" +bicis.reverse()+"</li>";
+          
+          // pop (Elimina el ultimo valor dela arreglo)
+          bicis.pop();
+         conten += "<li> Eliminar último valor: " +bicis.valueOf()+"</li>";
+
+         //shift (Elimina el primer valor del arreglo)
+         bicis.shift();
+         conten += "<li> Elimina primer valor : " +bicis.valueOf()+"</li>";
+
+         
+           //push(Adiciona el último valor del arreglo)
+           bicis.push('Intense');
+         conten += "<li> Adiciona ultimo valor: " +bicis.valueOf()+"</li>";
+         
+
+           //unshift(Adiciona el último valor del arreglo)
+           bicis.unshift('rocky mountain');
+         conten += "<li> Adiciona primer valor: " +bicis.valueOf()+"</li>";
+
+        // Mostrar la informacion
+        salida.innerHTML = conten;
+
+	</script>
+</body>
+</html>
+
+

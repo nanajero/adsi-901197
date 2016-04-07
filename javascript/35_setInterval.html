@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Función de tiempo ()setInterval</title>
+	<style>
+      h2{
+      	font: 5em tahoma;
+      	text-align: center;
+      }
+	</style>
+</head>
+<body>
+	<h1>
+    <hr>
+	<h2 id="segundos"></h2>
+
+     <script>
+      
+      var segundos = document.getElementById('segundos');
+      var cont     = 1;
+
+      var seg = setInterval(function(){
+      	segundos.innerHTML = cont+"segundos";
+      	cont++;
+      	if (cont >60) {
+      		alert("pasaron 60 segundos...");
+      		clearInterval(seg);
+      	}
+      },100);
+
+     </script>
+</body>
+</html>
