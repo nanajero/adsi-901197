@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Métodos(Set_jQuery)</title>
+</head>
+<body>
+	<h1>Métodos (Set_jQuery)</h1>
+    <hr>
+    <article>
+
+        <p>
+        	<input type="text" id="nombre" placeholder="ingrese nombre">
+        </p>
+    	<h1 id="titulo">HOLA</h1>
+    	<p id="texto">
+
+    		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eius, asperiores laboriosam numquam minus cupiditate nam perspiciatis eligendi explicabo. Excepturi alias aliquid fugiat perspiciatis inventore assumenda eveniet dolores porro consequatur!
+    	</p>
+    	<p>
+    		<a href="https://www.instagram.com/">Buscar Información</a>
+    	</p>
+    </article>
+     <button id="btnSet">Asignar texto</button>
+     <button id="btnHtml">Asignar HTML</button>
+     <button id="btnValue">Asignar Valor</button>
+     <button id="btnAttr">Asignar Atributo (href)</button>
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script>
+      $(document).ready(function(){
+        //----------------------------
+        $('input').keyup(function(event) {
+        	$('h1#titulo').text('Bienvenido'+$(this).val()); // SET/ GET
+        });
+        //--------------------------------- text('texto')
+        $('#btnSet').click(function(event) {
+        	($('#texto').text('Esto es un texto personalizado')); // SET
+        });
+        //-----------------------------------
+         $('#btnHtml').click(function(event) { // HTML
+        	($('article').html('<ul><li>Rosado</li></ul>')); // SET
+         });
+         //--------------------------------- //val()
+          $('#btnValue').click(function(event) {
+        	($('input').val('ADSI')); // SET
+         });
+        //------------------------------------ //attr
+         $('#btnAttr').click(function(event) {
+        	($('a').attr('href', 'https://twitter.com')); // SET
+        	
+
+        	});
+       });
+
+	</script>
+	
+</body>
+</html>

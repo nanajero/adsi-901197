@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manipulación del DOM (append/prepend/after/before/remove/empty)</title>
+</head>
+<body>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Manipulación del DOM (append/prepend/after/before/remove/empty)</title>
+		<style>
+          ul{
+          	border: 2px dotted #b11609;
+          	padding: 10px;
+          }
+
+		</style>
+		<hr>
+		<button id="btnPrepend">Adicionar hijo al inicio</button>
+		<button id="btnAppend">Adicionar hijo al final</button>
+		<button id="btnBefore">Adicionar hermano inicio</button>
+		<button id="btnAfter">Adicionar  hermano al final</button>
+		<button id="btnRemove">Remover hijos </button>
+		<button id="btnEmpty">Vaciar hijos</button>
+		<hr>
+		<ul class="colores">
+			<li>Rojo</li>
+			<li>Verde</li>
+			<li>Morado</li>
+		</ul>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script>
+          $(document).ready(function(){
+             //-------------------------------------------prepend()
+             $('#btnPrepend').click(function(event) {
+             	$('.colores').prepend('<li>Amarillo</li>')
+             });
+             //--------------------------------------------Append()
+             $('#btnAppend').click(function(event) {
+             	$('.colores').append('<li>Naranja</li>')
+             });
+             //--------------------------------------------Before()
+             $('#btnBefore').click(function(event) {
+             	$('.colores').before('<ul><li>violeta</li><li>fucsia</li></ul>')
+             });
+             //--------------------------------------------After()
+             $('#btnAfter').click(function(event) {
+             	$('.colores').after('<ul><li>azul</li><li>verde</li></ul>')
+             });
+             //----------------------------------------------Remove()
+             $('#btnRemove').click(function(event) {
+             	$('ul').remove ();
+             });
+             //---------------------------------------------Empty()
+             $('#btnEmpty').click(function(event) {
+             	$('ul').empty();
+             });
+          });
+          
+		</script>
+	</head>
+	<body>
+	
+	</body>
+	</html>
+</body>
+</html>

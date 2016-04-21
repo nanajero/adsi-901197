@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dimensiones</title>
+
+  <style>
+  body {
+   background-color: #D0F5A9;
+  }
+    div.bordes {
+      text-align: center;
+      border-width: 4px;
+      border-style: solid;
+
+      border-top-color: #ff0;
+      border-right-color: #f0f;
+      border-bottom-color: #0ff;
+      border-left-color: #f00;
+
+      height: 300px;
+      margin: 50px auto;
+      width: 400px;
+      padding: 20px;
+
+    }
+      
+
+       button{
+             border-radius: 50px;
+             background-color: #58FA82;
+       }
+        div.botones {
+          text-align: center;
+        }
+     
+  </style>
+</head>
+<body>
+  <h1>Dimensiones</h1>
+  <hr>
+  <div class="bordes"><h1>Dimensiones</h1></div>
+
+  <div class="botones">
+    <button id="btn1">ancho</button>
+    <button id="btn2">relleno</button>
+    <button id="btn3">borde</button>
+   </div>
+
+ <script src="js/jquery-1.12.3.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      
+      // -------------------------------------
+      $('#btn1').click(function(event) {
+     $ancho = $('div.bordes').width();
+     $alto =  $('div.bordes').height();
+     $cont = "el ancho es: "+$ancho+"px y el alto es:"+$alto+"px";
+     $('div.bordes').html($cont);
+      });
+      // -------------------------------------
+      $('#btn2').click(function(event) {
+      $ancho = $('div.bordes').innerWidth();
+      $alto  = $('div.bordes').innerHeight();
+     $cont = "el ancho es: "+$ancho+"px y el alto es:"+$alto+"px";
+     $('div.bordes').html($cont);
+      });
+        // -------------------------------------
+      $('#btn3').click(function(event) {
+        $ancho = $('div.bordes').outerWidth();
+        $alto  = $('div.bordes').outerHeight();
+        $cont = "el ancho es: "+$ancho+"px y el alto es:"+$alto+"px";
+        $('div.bordes').html($cont); 
+      });
+      });
+    </script>
+</body>
+</html>
